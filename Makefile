@@ -1,7 +1,7 @@
 SBT := java -jar bin/sbt-launch.jar
 FIRRTL := java -jar bin/firrtl.jar
 
-TESTS := BlackBoxConnect
+TESTS := WidthParameter
 
 verilog: $(foreach name,$(TESTS),generated-src/$(name).v)
 
